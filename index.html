@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animation Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar  -->
+    <nav class="navbar flex">
+        <h3 class="nav-title">Calculator</h3>
+    </nav>
+
+    <div class="wrapper flex">
+        <!-- Calculator -->
+        <div class="calculator">
+            <input type="text" readonly class="display flex" id="display">
+            <div class="btn-container flex">
+                <div class="btn special-btn"><button class="js-btn" onclick="
+                    currentValue = '';
+                    document.querySelector('#display').value = currentValue;">C</button></div>
+                <div class="btn special-btn"><button class="js-btn" onclick="calculatePercentage()">%</button></div>
+                <div class="btn special-btn"><button >X<sup>2</sup></button></div>
+                <div class="btn special-btn"><button onclick="
+                currentValue += '/';
+                document.querySelector('#display').value = currentValue;">/</button></div>
+                <div class="btn"><button onclick="
+                    currentValue += '7';
+                    document.querySelector('#display').value = currentValue;">7</button></div>
+                <div class="btn"><button onclick="
+                    currentValue += '8';
+                    document.querySelector('#display').value = currentValue;">8</button></div>
+                <div class="btn"><button onclick="
+                    currentValue += '9';
+                    document.querySelector('#display').value = currentValue;">9</button></div>
+                <div class="btn special-btn"><button onclick="
+                    currentValue += '*';
+                    document.querySelector('#display').value = currentValue;">x</button></div>
+                <div class="btn"><button onclick="
+                    currentValue += '4';
+                    document.querySelector('#display').value = currentValue;">4</button></div>
+                <div class="btn"><button onclick="
+                    currentValue += '5';
+                    document.querySelector('#display').value = currentValue;">5</button></div>
+                <div class="btn"><button onclick="
+                    currentValue += '6';
+                    document.querySelector('#display').value = currentValue;">6</button></div>
+                <div class="btn special-btn"><button onclick="
+                    currentValue += '-';
+                    document.querySelector('#display').value = currentValue;">-</button></div>
+                <div class="btn"><button onclick="
+                    currentValue += '1';
+                    document.querySelector('#display').value = currentValue;">1</button></div>
+                <div class="btn"><button onclick="
+                    currentValue += '2';
+                    document.querySelector('#display').value = currentValue;">2</button></div>
+                <div class="btn"><button onclick="
+                    currentValue += '3';
+                    document.querySelector('#display').value = currentValue;">3</button></div>
+                <div class="btn special-btn"><button onclick="
+                    currentValue += '+';
+                    document.querySelector('#display').value = currentValue;">+</button></div>
+                <div class="btn"><button onclick="
+                    currentValue += '00';
+                    document.querySelector('#display').value = currentValue;">00</button></div>
+                <div class="btn"><button onclick="
+                    currentValue += '0';
+                    document.querySelector('#display').value = currentValue;">0</button></div>
+                <div class="btn"><button onclick="
+                    currentValue += '.';
+                    document.querySelector('#display').value = currentValue;">.</button></div>
+                <div class="btn result-btn"><button onclick="calculateResult()">=</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

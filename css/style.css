@@ -1,0 +1,88 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for body and typography */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #A6F6FF;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add your additional styles here */
+
+/* Navabar */
+.navbar{
+    background-color: #F1EFEF;
+    width: 100%;
+    height: 8vh;
+    justify-content: left;
+}
+
+.nav-title{
+    padding-left: 1.5rem;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #363062;
+}
+/* wrapper */
+.wrapper{
+    margin-top: 5%;
+}
+
+
+/* Calculator */
+.calculator{
+    background-color: #F0F0F0;
+    width: 350px;
+    height: 450px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 2px ;
+}
+
+.display{
+    width: 100%;
+    height: 4rem;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #ffff;
+    margin-bottom: 5px;
+    font-size: 2rem;
+    text-align: right;
+    padding: 5px;
+}
+
+.btn-container{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.btn-container button {
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    /* padding: 10px; */
+    border: none;
+    border-radius: 50%;
+    margin: 5px 5px;
+    background-color: #ffff;
+}
+.result-btn button{
+    background-color: #FC4F00;
+    color: #ffff;
+}
+.special-btn button{
+    background-color: #D0D4CA;
+}
